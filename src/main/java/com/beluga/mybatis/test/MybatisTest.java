@@ -2,6 +2,7 @@ package com.beluga.mybatis.test;
 
 
 import com.beluga.mybatis.Mapper.EmployeeMapper;
+import com.beluga.mybatis.Mapper.EmployeeMapperPlus;
 import com.beluga.mybatis.bean.Employee;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -28,6 +29,25 @@ public class MybatisTest {
         }
     }
     SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+
+
+
+    @Test
+    public void testResultMap(){
+        SqlSession openSession = sqlSessionFactory.openSession();
+        try{
+            EmployeeMapperPlus mapper = openSession.getMapper(EmployeeMapperPlus.class);
+            /*Employee employee = mapper.getEmpById(1);
+            System.out.println(employee);*/
+            Employee empAndDept = mapper.getEmpAndDept(1);
+            System.out.println(empAndDept);
+        }finally {
+            openSession.close();
+        }
+    }
+
+
+
 
 
     @Test
@@ -68,23 +88,7 @@ public class MybatisTest {
     }
 
 
-    @Test
-    public void testUpdate(){
-        SqlSession sqlSession = sqlSessionFactory.openSession();
-        try{
-            EmployeeMapper mapper = sqlSession.getMapper(EmployeeMapper.class);
-            Employee employee = new Employee(null, "Kim", "Kim@atguigu.com", "1");
-            mapper.addEmp(employee);
 
-            System.out.println(employee);
-
-            sqlSession.commit();
-        }catch (Exception e){
-
-        }finally {
-            sqlSession.close();
-        }
-    }
 
 
     @Test

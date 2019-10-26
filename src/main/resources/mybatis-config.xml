@@ -8,9 +8,9 @@
 
     </properties>
 
-    <settings>
+    <!--<settings>
         <setting name="mapUnderscoreToCamelCase" value="true"/>
-    </settings>
+    </settings>-->
 
     <typeAliases>
         <typeAlias type="com.beluga.mybatis.bean.Employee" alias="Employee"/>

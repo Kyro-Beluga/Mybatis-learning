@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6596b13f-5f41-4ab2-8dcc-6a89e536a2ad" name="Default Changelist" comment="" />
+    <list default="true" id="6596b13f-5f41-4ab2-8dcc-6a89e536a2ad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beluga/mybatis/Mapper/EmployeeMapperPlus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beluga/mybatis/Mapper/EmployeeMapperPlus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beluga/mybatis/bean/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beluga/mybatis/bean/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beluga/mybatis/test/MybatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beluga/mybatis/test/MybatisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/EmployeeMapperPlus.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/EmployeeMapperPlus.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/beluga/mybatis/bean/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/beluga/mybatis/bean/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/beluga/mybatis/test/MybatisTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/beluga/mybatis/test/MybatisTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -55,7 +65,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MybatisTest.testSelect">
+  <component name="RunManager" selected="JUnit.MybatisTest.testResultMap">
     <configuration name="MybatisTest.helloWorldTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mybatis-learning" />
       <extension name="coverage">
@@ -67,6 +77,22 @@
       <option name="PACKAGE_NAME" value="com.beluga.mybatis.test" />
       <option name="MAIN_CLASS_NAME" value="com.beluga.mybatis.test.MybatisTest" />
       <option name="METHOD_NAME" value="helloWorldTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisTest.testResultMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mybatis-learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beluga.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.beluga.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.beluga.mybatis.test.MybatisTest" />
+      <option name="METHOD_NAME" value="testResultMap" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -122,6 +148,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MybatisTest.testResultMap" />
         <item itemvalue="JUnit.MybatisTest.testSelect" />
         <item itemvalue="JUnit.MybatisTest.testSelectParam" />
         <item itemvalue="JUnit.MybatisTest.testUpdate" />
@@ -140,7 +167,7 @@
       <option name="presentableId" value="Default" />
       <updated>1570795088786</updated>
       <workItem from="1570795096110" duration="6548000" />
-      <workItem from="1572066165654" duration="9197000" />
+      <workItem from="1572066165654" duration="12267000" />
     </task>
     <task id="LOCAL-00001" summary="resultMap">
       <created>1572095054438</created>
@@ -149,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572095054438</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="resultMap">
+      <created>1572095102963</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572095102963</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
