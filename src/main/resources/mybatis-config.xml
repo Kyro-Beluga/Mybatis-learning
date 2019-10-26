@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <properties resource="jdbc.properties">
+
+    </properties>
+
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <typeAliases>
+        <typeAlias type="com.beluga.mybatis.bean.Employee" alias="Employee"/>
+    </typeAliases>
+
+    <environments default="development">
+
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driverClass}"/>
+                <property name="url" value="${jdbcUrl}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <!--
+            resource:引入类路径下的xml文件
+            class: 引用接口
+                1、有sql映射文件,映射文件名必须和接口同名,并且放在与接口同一目录下
+                2、没有sql映射文件,所有的sql都是利用注解写在接口上的。
+
+            package: 批量注册;
+                但:注解版的接口可以直接注册, 有sql映射文件的还需要将xml文件放到一起。
+        -->
+        <mapper resource="mapper/EmployeeMapper.xml"/>
+    </mappers>
+</configuration>
