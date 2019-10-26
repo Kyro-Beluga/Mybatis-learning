@@ -11,6 +11,8 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MybatisTest {
 
@@ -27,6 +29,43 @@ public class MybatisTest {
     }
     SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
 
+
+    @Test
+    public void testSelect(){
+        SqlSession openSession = sqlSessionFactory.openSession();
+        try{
+            EmployeeMapper mapper = openSession.getMapper(EmployeeMapper.class);
+//            Map<String, Object> empByIdReturnMap = mapper.getEmpByIdReturnMap(1);
+//            System.out.println(empByIdReturnMap);
+
+            Map<Integer,Employee> map = mapper.getEmpByLastNameLikeReturnMap("%m");
+            System.out.println(map);
+
+        }catch (Exception e){
+
+        }finally {
+            openSession.close();
+        }
+    }
+
+
+    @Test
+    public void testSelectParam(){
+        SqlSession openSession = sqlSessionFactory.openSession();
+        try{
+            EmployeeMapper mapper = openSession.getMapper(EmployeeMapper.class);
+            //Employee employee = mapper.selectEmpByIDAndLastName(2, "Jerry");
+            Map<String, Object> map = new HashMap<>();
+            map.put("id",1);
+            map.put("lastName","Tom");
+            Employee employee = mapper.selectEmpByMap(map);
+            System.out.println(employee);
+        }catch (Exception e){
+
+        }finally {
+            openSession.close();
+        }
+    }
 
 
     @Test

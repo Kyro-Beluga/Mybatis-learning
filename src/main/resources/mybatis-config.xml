@@ -39,5 +39,6 @@
                 但:注解版的接口可以直接注册, 有sql映射文件的还需要将xml文件放到一起。
         -->
         <mapper resource="mapper/EmployeeMapper.xml"/>
+        <mapper resource="mapper/EmployeeMapperPlus.xml"/>
     </mappers>
 </configuration>

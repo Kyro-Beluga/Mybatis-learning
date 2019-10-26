@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6596b13f-5f41-4ab2-8dcc-6a89e536a2ad" name="Default Changelist" comment="" />
+    <list default="true" id="6596b13f-5f41-4ab2-8dcc-6a89e536a2ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/beluga/mybatis/Mapper/EmployeeMapperPlus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/EmployeeMapperPlus.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beluga/mybatis/Mapper/EmployeeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beluga/mybatis/Mapper/EmployeeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beluga/mybatis/test/MybatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beluga/mybatis/test/MybatisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/EmployeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/EmployeeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/beluga/mybatis/Mapper/EmployeeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/beluga/mybatis/Mapper/EmployeeMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/beluga/mybatis/test/MybatisTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/beluga/mybatis/test/MybatisTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/EmployeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/EmployeeMapper.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +31,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -30,7 +45,9 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1S3bBFKcnRMzjHB2BAd4G2M6FKM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -50,7 +67,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MybatisTest.testUpdate">
+  <component name="RunManager" selected="JUnit.MybatisTest.testSelect">
     <configuration name="MybatisTest.helloWorldTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mybatis-learning" />
       <extension name="coverage">
@@ -62,6 +79,38 @@
       <option name="PACKAGE_NAME" value="com.beluga.mybatis.test" />
       <option name="MAIN_CLASS_NAME" value="com.beluga.mybatis.test.MybatisTest" />
       <option name="METHOD_NAME" value="helloWorldTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisTest.testSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mybatis-learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beluga.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.beluga.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.beluga.mybatis.test.MybatisTest" />
+      <option name="METHOD_NAME" value="testSelect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisTest.testSelectParam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mybatis-learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beluga.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.beluga.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.beluga.mybatis.test.MybatisTest" />
+      <option name="METHOD_NAME" value="testSelectParam" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -85,6 +134,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MybatisTest.testSelect" />
+        <item itemvalue="JUnit.MybatisTest.testSelectParam" />
         <item itemvalue="JUnit.MybatisTest.testUpdate" />
         <item itemvalue="JUnit.MybatisTest.helloWorldTest" />
       </list>
@@ -101,11 +152,22 @@
       <option name="presentableId" value="Default" />
       <updated>1570795088786</updated>
       <workItem from="1570795096110" duration="6548000" />
-      <workItem from="1572066165654" duration="5229000" />
+      <workItem from="1572066165654" duration="9075000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
