@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.beluga.mybatis.Mapper.EmployeeMapper">
+
+
+    <!--  -->
+    <select id="getEmpByLastNameLikeReturnMap" resultType="Employee">
+        select * from tbl_employee where last_name like #{lastName}
+    </select>
+
+    <!-- 返回一个Map -->
+    <select id="getEmpByIdReturnMap" resultType="map">
+        select * from tbl_employee where id = #{id}
+    </select>
+
+    <!-- 传入的参数是map类型 -->
+    <select id="selectEmpByMap" resultType="Employee">
+       select * from tbl_employee where id = #{id} and last_name = #{lastName}
+    </select>
+
+    <!-- 多个参数时,mybatis会自动封装成map -->
+    <select id="selectEmpByIDAndLastName" resultType="Employee">
+        select * from tbl_employee where id = #{id} and last_name = #{lastName}
+    </select>
+
+    <select id="selectEmployee" resultType="com.beluga.mybatis.bean.Employee">
+        select * from tbl_employee where id = #{id}
+    </select>
+
+    <!--  void addEmp(Employee employee); -->
+    <insert id="addEmp" parameterType="Employee" useGeneratedKeys="true" keyProperty="id">
+        insert into tbl_employee(last_name,email,gender)
+        values(#{lastName},#{email},#{gender})
+    </insert>
+
+    <!--  void updateEmp(Employee employee); -->
+    <update id="updateEmp" parameterType="Employee">
+        updae tbl_employee
+            set last_name=#{lastName},email=#{email},gender=#{gender}
+    </update>
+
+    <!-- void deleteEmpById(Integer id); -->
+    <delete id="deleteEmpById">
+        delete from tbl_employee where id=#{id}
+    </delete>
+</mapper>
